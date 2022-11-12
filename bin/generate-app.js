@@ -29,7 +29,7 @@ if (projectName !== '.') {
   }
 }
 
-function main() {
+async function main() {
   try {
     console.log('파일 다운로드중...');
     execSync(`git clone --depth 1 ${GIT_REPO} ${projectPath}`);
